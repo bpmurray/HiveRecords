@@ -5,21 +5,23 @@ import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
 
 class verify extends StatelessWidget {
+  const verify({super.key});
+
 
 @override
 Widget build(BuildContext context) {
 return Scaffold(
-backgroundColor: Color(0xffffffff),
+backgroundColor: const Color(0xffffffff),
 appBar: 
 AppBar(
 elevation:0,
 centerTitle:true,
 automaticallyImplyLeading: false,
-backgroundColor:Color(0x00ffffff),
-shape:RoundedRectangleBorder(
+backgroundColor:const Color(0x00ffffff),
+shape:const RoundedRectangleBorder(
 borderRadius:BorderRadius.zero,
 ),
-title:Text(
+title:const Text(
 "Verification",
 style:TextStyle(
 fontWeight:FontWeight.w700,
@@ -32,7 +34,7 @@ color:Color(0xff000000),
 body:Align(
 alignment:Alignment.center,
 child:Padding(
-padding:EdgeInsets.symmetric(vertical: 0,horizontal:30),
+padding:const EdgeInsets.symmetric(vertical: 0,horizontal:30),
 child:SingleChildScrollView(
 child:
 Column(
@@ -41,13 +43,13 @@ crossAxisAlignment:CrossAxisAlignment.center,
 mainAxisSize:MainAxisSize.min,
 children: [
 ///***If you have exported images you must have to copy those images in assets/images directory.
-Image(
+const Image(
 image:AssetImage("assets/images/bee.jpg"),
 height:120,
 width:120,
 fit:BoxFit.contain,
 ),
-Padding(
+const Padding(
 padding:EdgeInsets.symmetric(vertical: 30,horizontal:0),
 child:Text(
 "Enter the verification code we just sent to your email address.",
@@ -66,16 +68,16 @@ numberOfFields: 4,
 showFieldAsBox: false,
 fieldWidth: 50,
 filled: true,
-fillColor: Color(0x00000000),
-enabledBorderColor: Color(0xff898a8e),
-focusedBorderColor: Color(0xff3a57e8),
+fillColor: const Color(0x00000000),
+enabledBorderColor: const Color(0xff898a8e),
+focusedBorderColor: const Color(0xff3a57e8),
 borderWidth: 2,
-margin:EdgeInsets.all(0),
+margin:const EdgeInsets.all(0),
 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 crossAxisAlignment: CrossAxisAlignment.center,
 obscureText: false,
 borderRadius: BorderRadius.circular(4.0),
-textStyle: TextStyle(
+textStyle: const TextStyle(
 fontWeight: FontWeight.w400,
 fontStyle: FontStyle.normal,
 fontSize: 20,
@@ -84,7 +86,7 @@ color: Color(0xff000000),
 onCodeChanged: (String code) {},
 onSubmit: (String verificationCode) {},
 ),
-Padding(
+const Padding(
 padding:EdgeInsets.symmetric(vertical: 30,horizontal:0),
 child:Row(
 mainAxisAlignment:MainAxisAlignment.start,
@@ -120,19 +122,19 @@ color:Color(0xff000000),
 ],),),
 MaterialButton(
 onPressed:(){},
-color:Color(0xff3a57e8),
+color:const Color(0xff3a57e8),
 elevation:0,
 shape:RoundedRectangleBorder(
 borderRadius:BorderRadius.circular(30.0),
 ),
-padding:EdgeInsets.all(16),
-child:Text("Verify", style: TextStyle( fontSize:16,
+padding:const EdgeInsets.all(16),
+textColor:const Color(0xffffffff),
+height:50,
+minWidth:150,
+child:const Text("Verify", style: TextStyle( fontSize:16,
 fontWeight:FontWeight.w700,
 fontStyle:FontStyle.normal,
 ),),
-textColor:Color(0xffffffff),
-height:50,
-minWidth:150,
 ),
 ],),),),),
 )
