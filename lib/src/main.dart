@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hiverecords/src/Splash.dart';
+import 'package:hiverecords/src/splash.dart';
 
 void main() {
   runApp(const MyApp());
