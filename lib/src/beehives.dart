@@ -11,7 +11,7 @@ class BeehiveApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
-      home: const ApiaryList(),
+      home: ApiaryList(),
     );
   }
 }
@@ -21,7 +21,7 @@ class ApiaryList extends StatelessWidget {
     // Add your apiaries here
   ];
 
-  const ApiaryList({super.key});
+  ApiaryList({super.key});
 
 
   @override

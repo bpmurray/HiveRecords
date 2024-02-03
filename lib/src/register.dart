@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 
-class register extends StatelessWidget {
+class Register extends StatelessWidget {
+  const Register({super.key});
+
   const register({super.key});
 
   @override

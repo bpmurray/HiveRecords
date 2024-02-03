@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class forgot extends StatelessWidget {
-  const forgot({super.key});
+class Forgot extends StatelessWidget {
+  const Forgot({super.key});
 
   @override
   Widget build(BuildContext context) {
