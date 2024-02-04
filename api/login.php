@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') :
    $row = mysqli_fetch_array($query, MYSQLI_ASSOC);
    if ($row === null) sendJson(404, 'User not found! (Email is not registered)');
    if (!password_verify($password, $row['password'])) sendJson(401, 'Incorrect Password!');
+   if ($row['activated'] === 0) sendJson(401, 'User not activated');
    sendJson(200, '', ['token' => encodeToken($row['id'])]);
 endif;
 

@@ -7,7 +7,7 @@ use Firebase\JWT\Key;
 use Firebase\JWT\ExpiredException;
 use Firebase\JWT\SignatureInvalidException;
 
-$tokenSecret = 'my_strong_token_secret';
+$tokenSecret = "Louth Beekeepers' Association and Brendan's Beez";
 
 function encodeToken($data)
 {
